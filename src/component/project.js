@@ -31,7 +31,7 @@ const Project = (props) => {
               <Typography gutterBottom variant="h5" component="div" style={{fontFamily: "'Lobster', cursive"}}>
                 {props.project.projectTitle}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="text.secondary"> 
                 {props.project.projectDescription}
               </Typography>
             </CardContent>
