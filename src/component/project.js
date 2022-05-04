@@ -28,7 +28,7 @@ const Project = (props) => {
               alt= {props.project.alt}
             />
             <CardContent style={{borderStyle: "solid", borderWidth: 1}}>
-              <Typography gutterBottom variant="h5" component="div" style={{fontFamily: "'Lobster', cursive"}}>
+              <Typography gutterBottom variant="h5" component="div" style={{fontFamily: "'PT Serif', serif"}}>
                 {props.project.projectTitle}
               </Typography>
               <Typography variant="body2" color="text.secondary"> 
