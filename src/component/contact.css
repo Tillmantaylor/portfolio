@@ -1,0 +1,36 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .7);
+    background: rgba(255,255,255, .9);
+    border-radius: 10px;
+    font-family: 'Lobster', cursive;
+    padding: 0 50px 10px 50px;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.hire-me {
+    transform: translateY(-15px);
+}

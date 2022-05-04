@@ -1,0 +1,66 @@
+
+.home-container {
+    position: relative;
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-image { 
+    height: 250px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.home-container .logo {
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.home-container .logo .techIcons {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    justify-content: space-evenly;
+    font-size: 50px;
+    gap: 25px;
+}
+
+.techIcons a {
+    transition: fill 200ms ease;
+    background: transparent;
+    fill: #222831;
+}
+
+.techIcons a.html:hover {
+    fill: #E34C26;
+}
+
+.techIcons a.js:hover {
+    fill: #F0DB4F;
+}
+
+.techIcons a.java:hover {
+    fill: #ED1D25;
+}
+
+.techIcons a.react:hover {
+    fill: #61DBFB;
+}
+
+.techIcons a.net:hover {
+    fill: #682876;
+}
+
+.techIcons a.css:hover {
+    fill: #264DE4;
+}
+
+.techIcons a svg {
+    fill: inherit;
+}

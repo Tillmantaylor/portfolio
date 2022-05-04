@@ -1,0 +1,23 @@
+.about-container {
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+}
+
+.about-content {
+    font-family: 'PT Serif', serif;
+    font-size: 1.3rem;
+}

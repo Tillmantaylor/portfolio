@@ -1,0 +1,20 @@
+.footer-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.social-icon {
+    height: 45px;
+    width: auto; 
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+    transition: fill 250ms ease;
+}
+
+.social-icon:hover {
+    fill: rgba(255, 255, 255, .5);
+}

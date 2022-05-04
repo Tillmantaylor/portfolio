@@ -1,0 +1,26 @@
+.container-projects {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 50px;
+    gap: 36px;
+    /*justify-content: center;*/
+}
+
+.container-projects-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .container-projects {
+        align-items: center;
+        flex-direction: column;
+    }
+}

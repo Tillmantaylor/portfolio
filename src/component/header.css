@@ -1,0 +1,16 @@
+.header-container {
+    font-family: 'Lobster', cursive;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    height: 100vh;
+}
+
+.header-container span {
+    font-size: 48px;
+}
