@@ -36,7 +36,7 @@ const Projects = () => {
         AOS.init();
       }, []);
   return (
-    <div className='container-projects-main' data-aos="slide-up" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+    <div className='container-projects-main' data-aos="slide-right" data-aos-duration="2000" data-aos-anchor-placement="top-center">
         <span className="project-title">Projects</span>
         <div id='projects' className='container-projects'>
             {_projects.map((project) => <Project key={project.link} project={project}/>)}
