@@ -1,40 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BsArrowDownCircle } from 'react-icons/bs';
 import { TextField, Button, Accordion, AccordionDetails, AccordionSummary, Typography} from '@mui/material';
 import './contact.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const form = useRef();
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-
-  function handleSubmit(e) {
+  function handleSubmit(e){
     e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
+
+    emailjs.sendForm('service_sr6zgsh', 'template_s2s1jkj', form.current, 'Eu_XqW1hDPzlyUaPO')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
 
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
-    <div id="contact" className='contact-container' data-aos="slide-up" data-aos-duration="2000">  
+    <div id="contact" className='contact-container' data-aos="slide-right" data-aos-duration="2000">  
       <Accordion style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", maxWidth: "500px", margin: "10px auto", borderRadius: "10px" }}>
         <AccordionSummary
           expandIcon={<BsArrowDownCircle />}
@@ -56,7 +50,7 @@ const Contact = () => {
                 </a>
               </div>
               <form
-                netlify="true"
+                ref={form}
                 name="contact"
                 onSubmit={handleSubmit}>
                 <h2>

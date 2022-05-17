@@ -16,22 +16,24 @@ const Nav = () => {
 
     return (
         <>
-            <div className="navigation">
-                <a href="#home">
-                    <AiOutlineHome className={`icon ${active === 0 ? 'active-nav' : ''}`} onClick={() => handleActive(0)} />
-                </a>
-                <a href="#about">
-                    <AiOutlineUser className={`icon ${active === 1 ? 'active-nav' : ''}`} onClick={() => handleActive(1)} />
-                </a>
-                <a href="#projects">
-                    <MdOutlineAssignment className={`icon ${active === 2 ? 'active-nav' : ''}`} onClick={() => handleActive(2)} />
-                </a>
-                <a href="#contact">
-                    <BiMessageRoundedDots className={`icon ${active === 3 ? 'active-nav' : ''}`} onClick={() => handleActive(3)} />
-                </a>
-                <a href="#footer">
-                    <BsArrowDownCircle className={`icon ${active === 4 ? 'active-nav' : ''}`} onClick={() => handleActive(4)} />
-                </a>
+            <div className="nav-wrapper">
+                <div className="navigation">
+                    <a href="#home">
+                        <AiOutlineHome className={`icon ${active === 0 ? 'active-nav' : ''}`} onClick={() => handleActive(0)} />
+                    </a>
+                    <a href="#about">
+                        <AiOutlineUser className={`icon ${active === 1 ? 'active-nav' : ''}`} onClick={() => handleActive(1)} />
+                    </a>
+                    <a href="#projects">
+                        <MdOutlineAssignment className={`icon ${active === 2 ? 'active-nav' : ''}`} onClick={() => handleActive(2)} />
+                    </a>
+                    <a href="#contact">
+                        <BiMessageRoundedDots className={`icon ${active === 3 ? 'active-nav' : ''}`} onClick={() => handleActive(3)} />
+                    </a>
+                    <a href="#footer">
+                        <BsArrowDownCircle className={`icon ${active === 4 ? 'active-nav' : ''}`} onClick={() => handleActive(4)} />
+                    </a>
+                </div>
             </div>
             <div className="hamburger-nav">
                 <IconButton onClick={(e) => setAnchor(e.currentTarget)}>
