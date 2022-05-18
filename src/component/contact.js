@@ -21,6 +21,9 @@ const Contact = () => {
       }, (error) => {
         console.log(error.text);
       });
+      setName("");
+      setEmail("");
+      setMessage("");
   };
 
   useEffect(() => {
